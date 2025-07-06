@@ -1,40 +1,248 @@
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Echte Stimmen, echte Meinung? KI und unsere Gesellschaft</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Präsentation: Echte Stimmen, echte Meinung? KI und unsere Gesellschaft. Risiken, Dilemmata und Lösungen rund um KI, Deepfakes, Microtargeting und Kontrolle durch Großkonzerne. Basierend auf dem EPTA-Report 2024.">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  <style>
+    .danger-text { color: #FF4444; font-weight: bold; }
+    .solution-text { color: #00CC88; font-weight: bold; }
+    .highlight { color: #FFD700; }
+    .big-emoji { font-size: 1.5em; }
+    .medium-text { font-size: 1.1em; }
+    .centered { text-align: center; }
+    .arrow-vs { font-size:2em; color:#FFD700; margin:0 0.2em; vertical-align:middle; }
+    .definition { font-size:0.8em; color:#CCCCCC; margin-top:0.5em; }
+    .white-text { color: #FFFFFF; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Folie 1: Titelfolie -->
+      <section data-background-color="#2C3E50" data-transition="zoom">
+        <h1 data-id="title" style="font-size:2.2em; margin-bottom:0.5em;">Echte Stimmen, echte Meinung?</h1>
+        <h3 data-id="subtitle" class="highlight">Wie KI unsere Demokratie herausfordert</h3>
+        <div style="margin-top:2em;">
+          <p class="medium-text">Basierend auf dem EPTA-Report 2024</p>
+          <p style="color:#BDC3C7;">06.07.2025</p>
+        </div>
+      </section>
 
-		<title>reveal.js</title>
+      <!-- Folie 2: Problem Einführung -->
+      <section data-background-color="#34495E" data-auto-animate>
+        <h3>Was ist das Problem? <span class="big-emoji">🤔</span></h3>
+        <div class="centered" style="margin-top:2em;">
+          <p class="medium-text">SpongeBob & Harry Potter Sprecher protestieren</p>
+          <p class="fragment fade-in highlight" style="font-size:1.3em; margin:1em 0;">"KI klont unsere Stimmen!"</p>
+          <p class="fragment fade-in">➡️ Das ist nur der Anfang...</p>
+        </div>
+        <aside class="notes">
+          Guten Tag. Kennen Sie diese Stimme? (kurze Pause) Es ist Santiago Ziesmer, die deutsche Stimme von Spongebob Schwammkopf. Oder die Stimme von Harry Potter, gesprochen von Timmo Niesner.
+          Genau diese bekannten Sprecher und viele ihrer Kollegen protestieren gerade lautstark auf TikTok und mit der Petition "Schützt die Kunst vor KI". Warum? Weil sie Angst haben, dass KI ihre Stimmen klont und ihre Arbeit überflüssig macht.
+        </aside>
+      </section>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+      <!-- Folie 3: Überblick -->
+      <section data-background-color="#34495E" data-auto-animate>
+        <h2>3 Gefahren, die uns alle betreffen</h2>
+        <div style="margin-top:2em;">
+          <p class="fragment fade-in" style="font-size:1.2em; margin:0.8em 0;">🤖 Gefälschte Videos von Politiker:innen</p>
+          <p class="fragment fade-in" style="font-size:1.2em; margin:0.8em 0;">🕵️ Facebook weiß, wie ihr wählt</p>
+          <p class="fragment fade-in" style="font-size:1.2em; margin:0.8em 0;">🏢 Amerikaner bestimmen unsere KI-Zukunft</p>
+        </div>
+        <aside class="notes">
+          Dieser Kampf ist aber nur die Spitze des Eisbergs. Er zeigt uns ein viel größeres Problem: Künstliche Intelligenz stellt ganz grundlegende Regeln unserer Gesellschaft infrage.
+          Ich zeige euch heute anhand des aktuellen EPTA-Reports des Deutschen Bundestags, wo die drei größten ethischen Gefahren für unsere Demokratie lauern.
+        </aside>
+      </section>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+      <!-- Folie 4: Gefahr 1 - Einführung -->
+      <section data-background-color="#E74C3C" data-transition="convex">
+        <h2 class="centered">Gefahr 1 <span class="big-emoji">🤖</span></h2>
+        <h3 class="centered">Gefälschte Videos sehen echt aus</h3>
+        <div class="definition">Deepfake = täuschend echt gefälschtes Video oder Audio</div>
+      </section>
+
+      <!-- Folie 5: Gefahr 1 - Details -->
+      <section data-background-color="#E74C3C" data-auto-animate>
+        <h3>Beispiel: Gefälschtes Politiker:innen-Video</h3>
+        <ul style="margin-top:1.5em;">
+          <li class="fragment fade-in">Eine Woche vor der Wahl...</li>
+          <li class="fragment fade-in">Video: "Politiker:in sagt etwas Schreckliches"</li>
+          <li class="fragment fade-in">Millionen sehen es, bevor klar wird: Es ist gefälscht!</li>
+        </ul>
+        <aside class="notes">
+          Die erste große Gefahr sind Fälschungen. Mit KI kann heute jede:r täuschend echte Bilder, Videos oder Stimmen erzeugen. Man nennt das Deepfakes.
+          Stellt euch vor: Eine Woche vor der Wahl taucht ein Video auf, in dem ein:e Politiker:in scheinbar eine schreckliche Aussage macht. Das Video geht viral. Bis sich herausstellt, dass es eine Fälschung war, ist die Wahl vielleicht schon gelaufen.
+        </aside>
+      </section>
+
+      <!-- Folie 6: Gefahr 1 - Ethik -->
+		<section data-background-color="#C0392B" data-auto-animate>
+		<h3>Was sollen wir tun?</h3>
+		<div style="display: flex; justify-content: center; align-items: flex-start; gap: 3em; margin-top: 2em; flex-wrap: wrap;">
+			<div class="fragment fade-in" style="text-align: center; font-size: 1.2em; max-width: 300px;">
+			<strong>Alle KI-Videos löschen lassen?</strong><br>
+			<small>(Auch lustige Memes und Kunstprojekte)</small>
+			</div>
+			<div class="fragment fade-in arrow-vs" style="font-size: 2em; align-self: center;">→</div>
+			<div class="fragment fade-in" style="text-align: center; font-size: 1.2em; max-width: 300px;">
+			<strong>Alles erlauben?</strong><br>
+			<small>(Auch gefälschte Politikervideos)</small>
 			</div>
 		</div>
+		<aside class="notes">
+			Das ist das Dilemma: Wenn man alle KI-generierten Videos verbietet, trifft man auch harmlose Memes, Kunstprojekte oder Comedy-Videos. Wenn man alles erlaubt, können Politiker:innen mit gefälschten Videos zerstört werden.
+			Wo zieht man die Grenze? Wer entscheidet, was echt und was fake ist?
+		</aside>
+		</section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+      <!-- Folie 7: Gefahr 2 - Einführung -->
+      <section data-background-color="#8E44AD" data-transition="slide">
+        <h2 class="centered">Gefahr 2 <span class="big-emoji">🕵️</span></h2>
+        <h3 class="centered">Facebook weiß, wie ihr wählt</h3>
+        <div class="definition">Microtargeting = gezielte Werbung auf Basis persönlicher Daten</div>
+      </section>
+
+      <!-- Folie 8: Gefahr 2 - Details -->
+      <section data-background-color="#9B59B6" data-auto-animate>
+        <h3 class="white-text">Beispiel: Unsere Daten werden ausgewertet</h3>
+        <ul style="margin-top:1.5em; color:#FFFFFF;">
+          <li class="fragment fade-in">Ihr liked Posts über Klimawandel</li>
+          <li class="fragment fade-in">Ihr bekommt nur noch Grünen-Werbung zu sehen</li>
+          <li class="fragment fade-in danger-text">Andere bekommen nur AfD-Werbung</li>
+        </ul>
+        <aside class="notes">
+          Die zweite Gefahr betrifft unsere Privatsphäre. KI-Systeme sind unglaublich gut darin, Daten zu analysieren – was wir liken, wo wir einkaufen, was wir online kommentieren.
+          Politische Parteien können diese Daten nutzen, um für jede:n von uns ein genaues Profil zu erstellen.
+        </aside>
+      </section>
+
+      <!-- Folie 9: Gefahr 2 - Ethik -->
+      <section data-background-color="#9B59B6" data-auto-animate>
+        <h3>Was sollte man tun?</h3>
+        <div style="display: flex; justify-content: center; align-items: flex-start; gap: 3em; margin-top: 2em; flex-wrap: wrap; color:#FFFFFF;">
+          <div class="fragment fade-in" style="text-align: center; font-size: 1.2em; max-width: 300px;">
+            <strong>Datensammeln komplett verbieten?</strong><br>
+            <small>(Viele Dienste funktionieren nicht mehr)</small>
+          </div>
+          <div class="fragment fade-in arrow-vs" style="font-size: 2em; align-self: center;">→</div>
+          <div class="fragment fade-in" style="text-align: center; font-size: 1.2em; max-width: 300px;">
+            <strong>Alles sammeln lassen?</strong><br>
+            <small>(Andere wissen alles über uns)</small>
+          </div>
+        </div>
+        <aside class="notes">
+          Das Dilemma: Wenn man Datensammeln komplett verbietet, funktionieren viele nützliche Dienste nicht mehr – keine personalisierten Nachrichten, keine Empfehlungen, keine Navigationshilfen.
+          Wenn man alles erlaubt, werden wir zu gläsernen Menschen, die man perfekt manipulieren kann. Wo ist der richtige Mittelweg?
+        </aside>
+      </section>
+
+      <!-- Folie 10: Gefahr 3 - Einführung -->
+      <section data-background-color="#34495E" data-transition="fade">
+        <h2 class="centered">Gefahr 3 <span class="big-emoji">🏢</span></h2>
+        <h3 class="centered">Amerikaner bestimmen deine KI-Zukunft</h3>
+      </section>
+
+      <!-- Folie 11: Gefahr 3 - Details -->
+      <section data-background-color="#2C3E50" data-auto-animate>
+        <h3>Das Kontrollproblem</h3>
+        <ul style="margin-top:1.5em;">
+          <li class="fragment fade-in">ChatGPT, Google, Meta bestimmen die KI-Entwicklung</li>
+          <li class="fragment fade-in">Europa ist abhängig von US-Firmen</li>
+          <li class="fragment fade-in danger-text">Diese Firmen entscheiden: Was ist erlaubt?</li>
+        </ul>
+        <aside class="notes">
+          Die dritte und letzte Gefahr ist die Frage nach der Kontrolle. Die mächtigste KI-Technologie wird von nur einer Handvoll riesiger Konzerne entwickelt - OpenAI mit ChatGPT, Google, Meta, Microsoft - die meisten davon aus den USA, nicht aus Europa.
+          Das schafft eine enorme Abhängigkeit. Wir nutzen ihre Technologie, ihre Plattformen, ihre Regeln. Wenn OpenAI entscheidet, dass ChatGPT bestimmte politische Themen nicht diskutiert, dann ist das so. Wenn Google seine Suchregeln ändert, beeinflusst das, welche Informationen wir finden.
+        </aside>
+      </section>
+
+      <!-- Folie 12: Gefahr 3 - Ethik -->
+      <section data-background-color="#2C3E50" data-auto-animate>
+        <h3>Was sollte man tun?</h3>
+        <div style="display: flex; justify-content: center; align-items: flex-start; gap: 3em; margin-top: 2em; flex-wrap: wrap;">
+          <div class="fragment fade-in" style="text-align: center; font-size: 1.2em; max-width: 300px;">
+            <span>🇪🇺 Eigene europäische KI entwickeln?</span><br>
+            <small>(Sehr teuer, dauert Jahre – aber mehr Kontrolle für uns)</small>
+          </div>
+          <div class="fragment fade-in arrow-vs" style="font-size: 2em; align-self: center;">→</div>
+          <div class="fragment fade-in" style="text-align: center; font-size: 1.2em; max-width: 300px;">
+            <span>🇺🇸 US-Firmen vertrauen?</span><br>
+            <small>(Schneller, günstiger – aber abhängig von deren Regeln)</small>
+          </div>
+        </div>
+        <aside class="notes">
+          Das letzte Dilemma: Soll Europa versuchen, eine eigene KI-Industrie aufzubauen? Das kostet Milliarden und dauert Jahre – und es ist nicht sicher, ob wir mit den USA mithalten können.
+          Oder akzeptiert man, dass amerikanische Firmen die KI-Welt bestimmen? Das ist billiger und einfacher – aber dann haben wir wenig Kontrolle über die Regeln, nach denen diese KI funktioniert.
+        </aside>
+      </section>
+
+      <!-- Folie 13: Lösungen - Einführung -->
+      <section data-background-color="#27AE60" data-transition="zoom">
+        <h2 class="centered">Was können wir tun? <span class="big-emoji">💡</span></h2>
+      </section>
+
+      <!-- Folie 14: Lösungen - Details -->
+      <section data-background-color="#2ECC71" data-auto-animate>
+        <h3>Was hilft konkret?</h3>
+        <ul style="margin-top:1.5em;">
+          <li class="fragment fade-in">EU AI Act: KI endlich gesetzlich geregelt!</li>
+          <li class="fragment fade-in">Wasserzeichen: KI-Inhalte sofort erkennbar machen</li>
+          <li class="fragment fade-in">Jeder kann lernen, Fakes zu entlarven!</li>
+        </ul>
+        <aside class="notes">
+          Aber wir sind nicht machtlos. Der Report schlägt drei einfache, aber wirksame Schritte vor:
+          Klare Regeln: Wir brauchen Gesetze, die den Missbrauch von KI verbieten.
+          Deutliche Kennzeichnung: Man muss immer sofort erkennen können: "Dieser Inhalt wurde von einer KI erstellt!"
+          Bewusstsein schaffen: Wir alle können lernen, kritischer mit dem umzugehen, was wir online sehen und hören.
+        </aside>
+      </section>
+
+      <!-- Folie 15: Abschlussfrage -->
+      <section data-background-color="#2ECC71" data-auto-animate>
+        <h3 style="margin-bottom: 1em;">Meine Frage an euch</h3>
+        <div class="fragment fade-up" style="
+          background: rgba(255, 255, 255, 0.15);
+          border-left: 5px solid white;
+          padding: 1.2em 1.5em;
+          border-radius: 0.5em;
+          font-size: 1.6em;
+          max-width: 800px;
+          margin: 0 auto;
+          text-align: center;
+          color: white;
+        ">
+          Werdet ihr das nächste Mal genauer hinschauen,<br> wenn ihr ein Video seht?
+        </div>
+        <aside class="notes">
+          Die wichtigste Botschaft ist: Wir müssen jetzt darüber reden, in welcher digitalen Welt wir leben wollen.
+          Deshalb meine abschließende Frage an euch: Seid ihr bereit, bei einem Video oder einer Nachricht in Zukunft zweimal hinzuschauen?
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      center: true,
+      transition: 'slide',
+      transitionSpeed: 'default',
+      backgroundTransition: 'fade',
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+    });
+  </script>
+</body>
 </html>
